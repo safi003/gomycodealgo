@@ -1,4 +1,4 @@
-ALGORITHM algorithm_name
+ALGORITHM Checkpoint 
 VAR
     lengts = 0;
     words = 1;
