@@ -1,0 +1,23 @@
+ALGORITHM algorithm_name
+VAR
+    lengts = 0;
+    words = 1;
+    vowels = 0;
+    caractere:  CHAR;
+BEGIN
+    lire(caractere)
+    WHILE (caractere != ".") DO
+        lengts = lengts + 1;
+
+        IF (caractere = " ") THEN
+            words = words + 1
+        END_IF
+
+        IF (caractere ="a" || caractere ="e" || caractere ="i" || caractere ="o" caractere ="u" || caractere ="y") THEN
+           vowels = vowels + 1
+        END_IF
+        lire(caractere)
+    END_WHILE
+
+    afficher(words, lengts, vowels)
+END
