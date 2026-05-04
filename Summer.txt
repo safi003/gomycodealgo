@@ -1,0 +1,93 @@
+Summary of Clean Code
+
+Chapter 2: Meaningful Names
+Names should clearly express intent.
+Best practices
+1. Names should reveal purpose
+    Example: maxStudents instead of m
+2. Avoid confusing or unclear names
+    Choose clear and precise words
+3. Make meaningful distinctions
+    Avoid names like data1, data2
+    Use userData, orderData
+4. Use pronounceable names
+    Example: generationTimestamp instead of genymdhms
+5. Use searchable names
+    Avoid e, z
+    Use event, maxStudents
+6. Do not encode types in names
+    Avoid phoneString, paymentInt
+7. Avoid unnecessary prefixes
+    Use memberDescription instead of m_description
+8. Use proper naming conventions
+    * Class names: nouns (Student, Car, Employee)
+    * Function names: verbs (postPayment(), deletePage())
+9. Be consistent
+    Use the same terms throughout the code
+10. Do not use the same name for different purposes
+11. Use domain-specific names
+    Example: AccountVisitor, NameBuilder
+12. Avoid overly long names
+
+Teamwork
+Use naming conventions and document them for code reviews and onboarding.
+
+
+Chapter 3: Functions
+Functions should be small, simple, and easy to understand.
+
+Key principles
+1. Keep functions small
+    Each function should be short
+2. Do one thing only: A function should have a single responsibility
+* Command and Query Separation
+    A function should either perform an action or return a value, not both
+* Avoid side effects
+    Functions should not modify unexpected data
+* Avoid switch statements
+    Prefer polymorphism
+
+3. Use a minimal number of arguments
+    Ideally no more than two
+4. Follow DRY (Don’t Repeat Yourself)
+    Avoid duplicating code
+5. Prefer exceptions over error codes
+    Use exceptions instead of returning values like null or -1
+
+Chapter 4: Comments
+Code should be self-explanatory. Comments are secondary.
+When to use comments
+* To document public APIs
+* To explain intent
+* To justify decisions
+* To provide warnings or emphasis
+* To explain why something is done
+* For complex or hard-to-understand code
+
+When not to use comments
+
+* To explain what the code already shows
+* Change logs or historical notes
+* Redundant or noisy comments
+* Misleading or incorrect comments
+* Confusing comments
+* Emotional or informal comments
+* Excessive details
+* Comments for every function (especially private ones)
+
+Chapter 6: Objects and Data Structures
+Understand the difference between objects and data structures.
+
+Objects
+* Hide internal data (encapsulation)
+* Expose behavior through methods
+
+Data Structures
+
+* Expose data directly
+* Contain little or no behavior
+
+
+* Do not mix data and business logic unnecessarily
+* Respect encapsulation
+* Choose the right approach depending on the context
